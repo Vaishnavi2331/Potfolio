@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services - Software Developer Portfolio</title>
+<style>
+  /* Reset and base */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #000000 0%, #444444 100%); /* gradient background */
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 40px 20px;
+    min-height: 100vh; /* Ensure the body fills the viewport height */
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(30, 30, 30, 0.85); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #a0a0a0; /* lighter grey for main heading */
+    text-align: center;
+  }
+
+  .services-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .service-card {
+    background: linear-gradient(135deg, #121212, #2c2c2c);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ddd;
+    flex: 1 1 300px;
+    max-width: 360px;
+  }
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 50px rgba(255,255,255,0.25), 0 0 24px rgba(255,255,255,0.15);
+  }
+
+  .service-card h3 {
+    color: #888888; /* medium grey for headings */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+    color: #bbbbbb; /* lighter grey for paragraph */
+    margin-bottom: 2rem;
+  }
+
+  .btn-select {
+    align-self: start;
+    background-color: #888888; /* medium grey button */
+    color: #121212; /* dark text for contrast */
+    border: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+  }
+  .btn-select:hover,
+  .btn-select:focus {
+    background-color: #aaaaaa; /* lighter grey on hover */
+    color: #000000;
+    box-shadow: 0 0 12px rgba(255,255,255,0.6);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1000px) {
+    .services-grid {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 700px) {
+    .service-card {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+  }
+</style>
+</head>
+<body>
+  <section class="container">
+    <h2>My Services</h2>
+    <div class="services-grid">
+      
+      <article class="service-card">
+        <h3>Frontend Development</h3>
+        <p>
+          Crafting beautiful, responsive, and user-friendly interfaces that provide immersive experiences. 
+          Utilizing HTML5, CSS3, JavaScript, and ReactJS to build performant and accessible web applications.
+        </p>
+        <button class="btn-select" type="button" aria-label="Select Frontend Development service">Select Service</button>
+      </article>
+      
+      <article class="service-card">
+        <h3>Backend Development</h3>
+        <p>
+          Building robust, scalable server-side solutions with Node.js and Express.js, designing restful APIs and database integrations that power your applications reliably.
+        </p>
+        <button class="btn-select" type="button" aria-label="Select Backend Development service">Select Service</button>
+      </article>
+      
+      <article class="service-card">
+        <h3>Full Stack Development</h3>
+        <p>
+          Combining frontend and backend expertise to deliver end-to-end web solutions, ensuring seamless integration, performance, and maintainability across your entire tech stack.
+        </p>
+        <button class="btn-select" type="button" aria-label="Select Full Stack Development service">Select Service</button>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Projects</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    /* Gradient black to dark grey background */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #000000 0%, #444444 100%);
+      font-family: 'Roboto', sans-serif;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    .projects-container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(30, 30, 30, 0.85);
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+    .projects-title {
+      margin: 0 0 30px;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 1.2px;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 0 0 6px #ffffff99;
+    }
+    .projects-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .project-item {
+      background: linear-gradient(135deg, #181818, #303030);
+      margin-bottom: 25px;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 30px rgba(255, 255, 255, 0.25);
+    }
+    .project-name {
+      margin: 0 0 10px;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #f0f0f0;
+    }
+    .project-description {
+      margin: 0 0 15px;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #bbbbbb;
+    }
+    .project-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #555555, #888888);
+      color: #eeeeee;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-link:hover {
+      background: linear-gradient(90deg, #bbbbbb, #dddddd);
+      color: #222222;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="projects-container">
+    <h3 class="projects-title">My Projects</h3>
+    <ul class="projects-list">
+      <li class="project-item">
+        <h4 class="project-name">Project 1: Portfolio</h4>
+        <p class="project-description">A personal website built using HTML, CSS, and JavaScript. The website features a responsive design, interactive elements, and a clean user interface.</p>
+        <a href="#" class="project-link">View Project</a>
+      </li>
+      <li class="project-item">
+        <h4 class="project-name">Project 2: E-Commerce Website</h4>
+        <p class="project-description">A to-do list app built using HTML, CSS, and JavaScript. The app features a user-friendly interface, data storage, and interactive elements.</p>
+        <a href="#" class="project-link">View Project</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
+

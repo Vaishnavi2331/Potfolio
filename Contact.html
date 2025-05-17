@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me for Projects</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background: linear-gradient(135deg, #42444d, #000000);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .contact-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 60px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      max-width: 400px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      letter-spacing: 1.2px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .intro {
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #e0e0e0;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      background: rgba(190, 181, 181, 0.15);
+      padding: 12px 25px;
+      border-radius: 50px;
+      transition: background 0.3s ease;
+      cursor: default;
+      user-select: text;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .info-item:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      stroke: #fff;
+      flex-shrink: 0;
+    }
+
+    .contact-link {
+      color: #fff;
+      text-decoration: none;
+      user-select: text;
+      transition: color 0.3s ease;
+    }
+
+    .contact-link:hover {
+      color: #ffd700;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .contact-container {
+        padding: 30px 20px;
+        max-width: 100%;
+      }
+
+      .title {
+        font-size: 1.8rem;
+      }
+
+      .info-item {
+        font-size: 1rem;
+        gap: 10px;
+        padding: 10px 20px;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="contact-container">
+    <h1 class="title">Contact Me for Your Projects</h1>
+    <p class="intro">I’d love to collaborate with you! Reach out to me through any of the following:</p>
+    <div class="contact-info">
+      <div class="info-item">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 5h2l3.6 7.59-1.35 2.44a1 1 0 00.3 1.26l2.7 2.7a1 1 0 001.26.3l2.44-1.35L19 19v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+        </svg>
+        <a href="tel:+1234567890" class="contact-link">9321749429</a>
+      </div>
+      <div class="info-item">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M16 12H8m8 0a4 4 0 01-8 0m8 0V8a4 4 0 00-8 0v4a8 8 0 0016 0v-1a3 3 0 00-3-3z" />
+        </svg>
+        <a href="mailto:your.email@example.com" class="contact-link">vaishnavisingh0223@gmail.com</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
